@@ -110,18 +110,23 @@
       <div class="container" data-aos="fade-up">
 
 
-        <model-viewer src="dress_shoe-right.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="shoesposter.webp" shadow-intensity="1" auto-rotate>
-          <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-          </div>
-          <button slot="ar-button" id="ar-button">
-              View in your space
-          </button>
-          <div id="ar-prompt">
-              <img src="ar_hand_prompt.png">
-          </div>
-        </model-viewer>  
-
+<!-- <model-viewer> HTML element -->
+  <model-viewer src="arm_chair__furniture.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="armchairposter.webp" shadow-intensity="1" auto-rotate>
+    <button class="Hotspot" slot="hotspot-1" data-position="-0.3642278558282691m 0.13214204981264743m 0.45565447795325764m" data-normal="-0.7903955305466316m 0.25415139922426283m 0.5573885283751886m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">wooden legs</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="-0.45810514851488354m 0.5499418779596976m 0.06321474781143954m" data-normal="-0.9370617552128506m -0.20712108766032303m -0.2810980646746193m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">fabric</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="ar_hand_prompt.png">
+    </div>
+  </model-viewer>  
 
 
 
@@ -273,7 +278,7 @@
   <script src="assets/js/main.js"></script>
   <script src="script.js"></script>
   <!-- Loads <model-viewer> for browsers: -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 
 </body>
 
