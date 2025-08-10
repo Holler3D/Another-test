@@ -110,17 +110,27 @@
       <div class="container" data-aos="fade-up">
 
 
-        <model-viewer src="dress_shoe-right.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="shoesposter.webp" shadow-intensity="1" auto-rotate>
-          <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-          </div>
-          <button slot="ar-button" id="ar-button">
-              View in your space
-          </button>
-          <div id="ar-prompt">
-              <img src="ar_hand_prompt.png">
-          </div>
-        </model-viewer>  
+   <!-- <model-viewer> HTML element -->
+    <model-viewer src="modern_luxury_villa_house_building_with_pool.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="glasshouseposter.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 89deg auto">
+      <button class="Hotspot" slot="hotspot-1" data-position="-165.36433389004816m -0.09747039577058558m 9.402943059125313m" data-normal="4.440892001441843e-16m 1m -2.220446243367865e-16m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">swimming pool</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-166.23864777067882m 6.588854222844815m -8.799655162481873m" data-normal="4.440892001441843e-16m 1m -2.220446243367865e-16m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Roof</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-172.24680316175335m 0.5089738258593961m -1.9250824546470922m" data-normal="0m -4.371138828673792e-8m 0.9999999999999991m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Glass</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="-172.4770150329073m 0.06639999718070477m 13.021683004164366m" data-normal="4.440892001441843e-16m 1m -2.220446243367865e-16m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">lawn</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
 
 
 
@@ -273,7 +283,7 @@
   <script src="assets/js/main.js"></script>
   <script src="script.js"></script>
   <!-- Loads <model-viewer> for browsers: -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 
 </body>
 
